@@ -71,14 +71,16 @@ jobs:
             - name: Install dependencies
               run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
             - name: Build with Next.js
-              run: ${{ steps.detect-package-manager.outputs.runner }} next build --no-cache
+              run: |
+                  ${{ steps.detect-package-manager.outputs.runner }} next build
+                  ${{ steps.detect-package-manager.outputs.runner }} next export
               env:
                   PLASMIC_PROJECT_ID: ${{ secrets.PLASMIC_PROJECT_ID }}
                   PLASMIC_PROJECT_TOKEN: ${{ secrets.PLASMIC_PROJECT_TOKEN }}
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./.next
+                  path: ./out
 
     # Deployment job
     deploy:
