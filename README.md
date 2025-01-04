@@ -18,8 +18,10 @@ With Plasmic, you can enable non-developers on your team to publish pages and co
 
 To learn more about Plasmic, take a look at the following resources:
 
-- [Plasmic Website](https://www.plasmic.app/)
-- [Plasmic Documentation](https://docs.plasmic.app/learn/)
-- [Plasmic Community Forum](https://forum.plasmic.app/)
+-   [Plasmic Website](https://www.plasmic.app/)
+-   [Plasmic Documentation](https://docs.plasmic.app/learn/)
+-   [Plasmic Community Forum](https://forum.plasmic.app/)
 
 You can check out [the Plasmic GitHub repository](https://github.com/plasmicapp/plasmic) - your feedback and contributions are welcome!
+
+# Here some change!
